@@ -16,8 +16,10 @@ Pages.
 │   └── weather-dashboard.html
 ├── css/
 │   └── styles.css           # All site styling
-└── js/
-    └── script.js            # Interactivity
+├── js/
+│   └── script.js            # Interactivity
+└── images/
+    └── profile.jpg          # Hero profile photo (add yours here)
 ```
 
 ## Features
@@ -31,6 +33,18 @@ Pages.
   reflection on what I learned.
 - **Accessible** — semantic HTML, ARIA labels on interactive controls, and a
   `prefers-reduced-motion` fallback.
+
+## Adding your profile photo
+
+The hero image on the home page is loaded from `images/profile.jpg`. To use
+your own photo, save a square (or portrait) JPEG there:
+
+```bash
+cp /path/to/your-photo.jpg images/profile.jpg
+```
+
+If the file is missing, the hero automatically falls back to a gradient
+"SD" avatar so the page still looks polished.
 
 ## Running locally
 

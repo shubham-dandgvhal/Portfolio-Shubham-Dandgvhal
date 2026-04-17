@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automated Weekly Client Reporting — Shubham Dandgvhal</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">SD<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#certifications">Certifications</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="breadcrumb">
+        <a href="../index.html">Home</a> /
+        <a href="../index.html#projects">Projects</a> /
+        Automated Weekly Client Reporting
+      </p>
+      <h1>Automated Weekly Client Reporting</h1>
+      <p class="summary">
+        A Python automation pipeline that extracts data from a NoSQL database,
+        uploads the payload to a Linux server, and emails a formatted report
+        to clients every week — replacing a manual workflow that ate up an
+        hour every Monday.
+      </p>
+      <div class="project-meta">
+        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Organization</strong>IQVIA R&amp;DS India</div>
+        <div><strong>Type</strong>Internal automation</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="project-content">
+        <div>
+          <h2>The problem</h2>
+          <p>
+            Each week, the team spent roughly 60 minutes pulling the same data,
+            copying it into a report template, and manually attaching it to an
+            email. It was repetitive, error-prone, and nobody's favourite part
+            of the week.
+          </p>
+
+          <h2>The approach</h2>
+          <ul>
+            <li>Wrote a Python script that queries the NoSQL store for the previous week's activity and aggregates the metrics the client cares about.</li>
+            <li>Formatted the output into a clean, branded report and uploaded it to the designated Linux server path.</li>
+            <li>Wired the pipeline to an SMTP step that sends the report to the client distribution list with a short cover note.</li>
+            <li>Scheduled the job via cron and added logging so failures surface immediately rather than waiting for the client to notice.</li>
+          </ul>
+
+          <h2>Impact</h2>
+          <ul>
+            <li>Saved ~60 minutes of manual work every week, freeing the team to focus on higher-value engagements.</li>
+            <li>Removed a source of human error — reports now go out in a consistent format, on the same day, every week.</li>
+            <li>Gave clients a reliable delivery cadence they could plan their own reviews around.</li>
+          </ul>
+
+          <h2>What I learned</h2>
+          <ul>
+            <li>Automation earns its keep when it's observable — silent scripts break silently.</li>
+            <li>Small productivity wins compound across a team of consultants.</li>
+            <li>Writing scripts with clean separation between extract, transform, and send makes them easy to extend later.</li>
+          </ul>
+        </div>
+
+        <aside class="project-sidebar">
+          <h3>Tech stack</h3>
+          <ul class="tech-list">
+            <li>Python</li><li>MongoDB</li><li>Linux</li><li>cron</li><li>SMTP</li>
+          </ul>
+          <h3>Highlights</h3>
+          <ul class="tech-list">
+            <li>Scheduled jobs</li><li>Logging</li><li>ETL pattern</li>
+          </ul>
+          <a href="../contact.html" class="btn btn-primary" style="width:100%;text-align:center;">Discuss this work</a>
+        </aside>
+      </div>
+
+      <div class="project-nav">
+        <a href="operations-dashboard.html">← Operations Dashboard</a>
+        <a href="change-approval.html">Next: Change Approval Reduction →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

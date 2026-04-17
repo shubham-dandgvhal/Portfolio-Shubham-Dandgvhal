@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Shubham Dandgvhal</title>
-  <meta name="description" content="Get in touch with Shubham Dandgvhal." />
+  <meta name="description" content="Get in touch with Shubham Dandgvhal — Solutions Consultant & Product Support Tech Advisor." />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +19,10 @@
       </button>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
         <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#certifications">Certifications</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
@@ -32,16 +34,29 @@
         <p class="section-eyebrow">Contact</p>
         <h1 class="section-title">Let's get in touch</h1>
         <p class="section-sub">
-          I'm open to internships, collaborations, and just friendly hellos.
-          The fastest way to reach me is email, but feel free to use any of
-          the channels below.
+          I'm open to Solutions Consultant, Product Owner, and Technical
+          Product Management roles — plus collaborations and friendly hellos.
+          Email is the fastest way to reach me; pick whichever channel below
+          works best for you.
         </p>
 
         <div class="contact-grid">
-          <a class="contact-card" href="mailto:shubham@example.com">
+          <a class="contact-card" href="mailto:dandgvhalshubham@gmail.com">
             <div class="contact-icon" aria-hidden="true">@</div>
             <h3>Email</h3>
-            <p>shubham@example.com</p>
+            <p>dandgvhalshubham@gmail.com</p>
+          </a>
+
+          <a class="contact-card" href="tel:+919650602440">
+            <div class="contact-icon" aria-hidden="true">☎</div>
+            <h3>Phone</h3>
+            <p>+91 96506 02440</p>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/shubham-dandgvhal/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon" aria-hidden="true">in</div>
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
           </a>
 
           <a class="contact-card" href="https://github.com/shubham-dandgvhal" target="_blank" rel="noopener noreferrer">
@@ -49,23 +64,26 @@
             <h3>GitHub</h3>
             <p>@shubham-dandgvhal</p>
           </a>
+        </div>
 
-          <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <div class="contact-icon" aria-hidden="true">in</div>
-            <h3>LinkedIn</h3>
-            <p>Connect with me</p>
-          </a>
-
-          <a class="contact-card" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-            <div class="contact-icon" aria-hidden="true">X</div>
-            <h3>Twitter / X</h3>
-            <p>Say hi in a DM</p>
-          </a>
+        <div class="contact-extras">
+          <div class="extras-card">
+            <h3>Location</h3>
+            <p>Based in India · Open to remote &amp; global roles</p>
+          </div>
+          <div class="extras-card">
+            <h3>Response time</h3>
+            <p>Usually within 24 hours on weekdays</p>
+          </div>
+          <div class="extras-card">
+            <h3>Best for</h3>
+            <p>Solutions Consulting, Product Support, Product Ownership, Service Delivery</p>
+          </div>
         </div>
 
         <div class="contact-form-wrap">
           <h2>Or send a quick message</h2>
-          <p class="muted">This form is a demo — it won't actually send an email.</p>
+          <p class="muted">This form is a demo — it won't actually send an email. For the real thing please email me directly.</p>
           <form class="contact-form" onsubmit="handleContactSubmit(event)">
             <div class="form-row">
               <label for="name">Name
@@ -79,7 +97,7 @@
               <input type="text" id="subject" name="subject" required />
             </label>
             <label for="message">Message
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me a bit about the role, project, or question."></textarea>
             </label>
             <button type="submit" class="btn btn-primary">Send message</button>
             <p class="form-status" id="formStatus" role="status"></p>
@@ -94,6 +112,7 @@
       <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
         <li><a href="index.html#projects">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>

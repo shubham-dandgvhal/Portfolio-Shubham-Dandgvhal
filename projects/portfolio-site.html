@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rock, Paper, Scissors — Shubham Dandgvhal</title>
+  <title>This Portfolio Site — Shubham Dandgvhal</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,10 @@
       </button>
       <nav class="nav-links" aria-label="Primary">
         <a href="../index.html">Home</a>
-        <a href="../index.html#projects" class="active">Projects</a>
         <a href="../index.html#about">About</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#certifications">Certifications</a>
         <a href="../contact.html">Contact</a>
       </nav>
     </div>
@@ -30,18 +32,18 @@
       <p class="breadcrumb">
         <a href="../index.html">Home</a> /
         <a href="../index.html#projects">Projects</a> /
-        Rock, Paper, Scissors
+        This Portfolio Site
       </p>
-      <h1>Rock, Paper, Scissors</h1>
+      <h1>This Portfolio Site</h1>
       <p class="summary">
-        A colorful take on the classic schoolyard game, built entirely in
-        vanilla JavaScript. Keeps track of wins, losses, and ties so you can
-        settle the debate for good.
+        The site you're reading right now — a static, responsive, accessible
+        portfolio built from scratch with HTML, CSS, and vanilla JavaScript.
+        Deployed to GitHub Pages with no build step required.
       </p>
       <div class="project-meta">
-        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Role</strong>Designer &amp; developer</div>
         <div><strong>Timeline</strong>One weekend</div>
-        <div><strong>Type</strong>Browser game</div>
+        <div><strong>Type</strong>Static personal site</div>
       </div>
     </section>
 
@@ -50,36 +52,33 @@
         <div>
           <h2>The idea</h2>
           <p>
-            The goal was to practice DOM manipulation and event handling with
-            something small enough to finish in a sitting but interactive enough
-            to stay fun. Rock, Paper, Scissors fits the bill — clear rules, a
-            natural click-based UI, and a built-in way to show state.
+            A personal portfolio needs to do three things well: introduce the
+            person, surface their best work, and make it easy to get in touch.
+            I wanted mine to feel modern and fast, with zero build pipeline so
+            it's trivial to update and deploy.
           </p>
 
-          <h2>How it works</h2>
-          <p>
-            Each move is a button. When the player clicks one, the game picks a
-            random counter-move for the CPU, figures out who won, and updates
-            three things: the score, a status message, and an animated reveal
-            of the two choices side-by-side.
-          </p>
+          <h2>How it's built</h2>
           <ul>
-            <li>Score state is kept in a small object and persisted to localStorage.</li>
-            <li>A reset button clears the score and resets the status text.</li>
-            <li>The UI uses CSS transitions so wins feel more satisfying.</li>
+            <li>Plain HTML, CSS, and JavaScript — no frameworks, no bundler.</li>
+            <li>Custom CSS with variables for theming (light &amp; dark) and a mobile-first responsive layout.</li>
+            <li>Interactive features: mobile nav, theme toggle persisted in <code>localStorage</code>, project filter, and client-side contact form validation.</li>
+            <li>Accessible navigation and ARIA labelling; honours <code>prefers-reduced-motion</code>.</li>
+            <li>Deployed via GitHub Pages straight from the <code>main</code> branch.</li>
           </ul>
 
-          <h2>What I learned</h2>
+          <h2>What I wanted to show</h2>
           <ul>
-            <li>How to split logic (picking a winner) from presentation (rendering a round).</li>
-            <li>Why keeping state in one place makes the UI much easier to keep in sync.</li>
-            <li>Small details — an ARIA live region for the score — go a long way for accessibility.</li>
+            <li>That I can design a user-facing experience, not just work in tooling and tickets.</li>
+            <li>That I still enjoy coding hands-on — consultancy and development aren't mutually exclusive.</li>
+            <li>A coherent story: summary, experience timeline, project case studies, credentials, and contact.</li>
           </ul>
 
           <h2>What's next</h2>
           <p>
-            I'd like to add a "best of 5" mode and swap the emoji icons for
-            hand-drawn SVGs so the game feels more personal.
+            A blog section for longer-form write-ups on product operations and
+            technical support, plus a downloadable résumé button on the about
+            section.
           </p>
         </div>
 
@@ -90,15 +89,15 @@
           </ul>
           <h3>Highlights</h3>
           <ul class="tech-list">
-            <li>localStorage</li><li>A11y</li><li>Animations</li>
+            <li>Dark mode</li><li>Filterable projects</li><li>No build step</li>
           </ul>
-          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;">View source</a>
+          <a href="../contact.html" class="btn btn-primary" style="width:100%;text-align:center;">Get in touch</a>
         </aside>
       </div>
 
       <div class="project-nav">
-        <a href="../index.html#projects">← All projects</a>
-        <a href="flashcards.html">Next: Flashcard Study App →</a>
+        <a href="change-approval.html">← Change Approval Reduction</a>
+        <a href="../index.html#projects">All projects →</a>
       </div>
     </section>
   </main>

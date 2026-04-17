@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard — Shubham Dandgvhal</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">SD<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="breadcrumb">
+        <a href="../index.html">Home</a> /
+        <a href="../index.html#projects">Projects</a> /
+        Weather Dashboard
+      </p>
+      <h1>Weather Dashboard</h1>
+      <p class="summary">
+        A responsive weather app that lets users search any city and see the
+        current conditions, a five-day outlook, and sunrise/sunset times at a
+        glance. Built with React and a public weather API.
+      </p>
+      <div class="project-meta">
+        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Timeline</strong>Three weeks</div>
+        <div><strong>Type</strong>React single-page app</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="project-content">
+        <div>
+          <h2>The idea</h2>
+          <p>
+            Most weather sites are either too busy or too sparse. I wanted a
+            middle-ground dashboard that surfaces the information I actually
+            care about in one scroll, without ads or filler.
+          </p>
+
+          <h2>How it works</h2>
+          <ul>
+            <li>Typing a city fetches current conditions and a forecast from the API.</li>
+            <li>Responses are cached in memory so switching tabs stays snappy.</li>
+            <li>Units can be toggled between Celsius and Fahrenheit and the choice persists.</li>
+            <li>Error states (bad city, network failure) show helpful messages instead of spinning forever.</li>
+          </ul>
+
+          <h2>What I learned</h2>
+          <ul>
+            <li>Working with React hooks for state and effects.</li>
+            <li>Structuring components around data flow instead of visuals.</li>
+            <li>Handling async errors gracefully — the happy path is the easy half.</li>
+          </ul>
+
+          <h2>What's next</h2>
+          <p>
+            Geolocation on first load, saved "favorite" cities, and a small
+            hourly chart for the next twelve hours.
+          </p>
+        </div>
+
+        <aside class="project-sidebar">
+          <h3>Tech stack</h3>
+          <ul class="tech-list">
+            <li>React</li><li>CSS</li><li>REST API</li>
+          </ul>
+          <h3>Highlights</h3>
+          <ul class="tech-list">
+            <li>Hooks</li><li>Caching</li><li>Error states</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;">View source</a>
+        </aside>
+      </div>
+
+      <div class="project-nav">
+        <a href="flashcards.html">← Flashcard Study App</a>
+        <a href="../index.html#projects">All projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

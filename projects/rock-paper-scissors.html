@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock, Paper, Scissors — Shubham Dandgvhal</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="logo">SD<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero container">
+      <p class="breadcrumb">
+        <a href="../index.html">Home</a> /
+        <a href="../index.html#projects">Projects</a> /
+        Rock, Paper, Scissors
+      </p>
+      <h1>Rock, Paper, Scissors</h1>
+      <p class="summary">
+        A colorful take on the classic schoolyard game, built entirely in
+        vanilla JavaScript. Keeps track of wins, losses, and ties so you can
+        settle the debate for good.
+      </p>
+      <div class="project-meta">
+        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Timeline</strong>One weekend</div>
+        <div><strong>Type</strong>Browser game</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="project-content">
+        <div>
+          <h2>The idea</h2>
+          <p>
+            The goal was to practice DOM manipulation and event handling with
+            something small enough to finish in a sitting but interactive enough
+            to stay fun. Rock, Paper, Scissors fits the bill — clear rules, a
+            natural click-based UI, and a built-in way to show state.
+          </p>
+
+          <h2>How it works</h2>
+          <p>
+            Each move is a button. When the player clicks one, the game picks a
+            random counter-move for the CPU, figures out who won, and updates
+            three things: the score, a status message, and an animated reveal
+            of the two choices side-by-side.
+          </p>
+          <ul>
+            <li>Score state is kept in a small object and persisted to localStorage.</li>
+            <li>A reset button clears the score and resets the status text.</li>
+            <li>The UI uses CSS transitions so wins feel more satisfying.</li>
+          </ul>
+
+          <h2>What I learned</h2>
+          <ul>
+            <li>How to split logic (picking a winner) from presentation (rendering a round).</li>
+            <li>Why keeping state in one place makes the UI much easier to keep in sync.</li>
+            <li>Small details — an ARIA live region for the score — go a long way for accessibility.</li>
+          </ul>
+
+          <h2>What's next</h2>
+          <p>
+            I'd like to add a "best of 5" mode and swap the emoji icons for
+            hand-drawn SVGs so the game feels more personal.
+          </p>
+        </div>
+
+        <aside class="project-sidebar">
+          <h3>Tech stack</h3>
+          <ul class="tech-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <h3>Highlights</h3>
+          <ul class="tech-list">
+            <li>localStorage</li><li>A11y</li><li>Animations</li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;">View source</a>
+        </aside>
+      </div>
+
+      <div class="project-nav">
+        <a href="../index.html#projects">← All projects</a>
+        <a href="flashcards.html">Next: Flashcard Study App →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Dandgvhal — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Shubham Dandgvhal — web developer and software engineer." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">SD<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Hi there, I'm</p>
+          <h1>Shubham Dandgvhal.</h1>
+          <h2 class="tagline">I build things for the web.</h2>
+          <p class="lead">
+            I'm a developer passionate about crafting clean, accessible, and
+            user-focused digital experiences. I enjoy turning ideas into working
+            products and learning new technologies along the way.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="avatar">
+            <span class="avatar-initials">SD</span>
+          </div>
+          <div class="floating-tag tag-1">HTML</div>
+          <div class="floating-tag tag-2">CSS</div>
+          <div class="floating-tag tag-3">JavaScript</div>
+          <div class="floating-tag tag-4">React</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="section-eyebrow">01 — About</p>
+          <h2 class="section-title">A little about me</h2>
+          <p>
+            I'm currently exploring web development through the CodePath Web
+            Development path. I love the balance between problem-solving and
+            design — building interfaces that feel simple to use while being
+            solid under the hood.
+          </p>
+          <p>
+            When I'm not coding, you can find me reading, tinkering with side
+            projects, or exploring new coffee shops. I'm always open to new
+            opportunities and collaborations.
+          </p>
+        </div>
+        <div class="skills">
+          <h3>Technologies I work with</h3>
+          <ul class="skill-list">
+            <li>HTML5 &amp; Semantic markup</li>
+            <li>CSS3, Flexbox &amp; Grid</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git &amp; GitHub</li>
+            <li>Responsive design</li>
+            <li>Accessibility (a11y)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow">02 — Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-sub">
+          A collection of projects from the path and beyond. Use the filters
+          below to browse by technology, and click any card for a closer look.
+        </p>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="html">HTML/CSS</button>
+          <button class="filter-btn" type="button" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" type="button" data-filter="react">React</button>
+          <button class="filter-btn" type="button" data-filter="api">API</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="html css javascript">
+            <div class="project-thumb thumb-1" aria-hidden="true">
+              <span>01</span>
+            </div>
+            <div class="project-body">
+              <h3>Rock, Paper, Scissors</h3>
+              <p>
+                A classic browser game that tracks your score across rounds and
+                reacts to each choice with smooth feedback.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <a href="projects/rock-paper-scissors.html" class="card-link">
+                Read more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="html css javascript">
+            <div class="project-thumb thumb-2" aria-hidden="true">
+              <span>02</span>
+            </div>
+            <div class="project-body">
+              <h3>Flashcard Study App</h3>
+              <p>
+                A lightweight flashcard tool to help learners quiz themselves on
+                custom decks, complete with flip animations.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <a href="projects/flashcards.html" class="card-link">
+                Read more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="react css api javascript">
+            <div class="project-thumb thumb-3" aria-hidden="true">
+              <span>03</span>
+            </div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>
+                A responsive dashboard that fetches live forecast data so users
+                can plan their day without opening five tabs.
+              </p>
+              <ul class="tech-list">
+                <li>React</li><li>CSS</li><li>REST API</li>
+              </ul>
+              <a href="projects/weather-dashboard.html" class="card-link">
+                Read more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Have a project in mind?</h2>
+          <p>I'd love to hear about it — let's build something together.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

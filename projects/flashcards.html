@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>This Portfolio Site — Shubham Dandgvhal</title>
+  <title>Flashcard Study App — Shubham Dandgvhal</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,18 +32,18 @@
       <p class="breadcrumb">
         <a href="../index.html">Home</a> /
         <a href="../index.html#projects">Projects</a> /
-        This Portfolio Site
+        Flashcard Study App
       </p>
-      <h1>This Portfolio Site</h1>
+      <h1>Flashcard Study App</h1>
       <p class="summary">
-        The site you're reading right now — a static, responsive, accessible
-        portfolio built from scratch with HTML, CSS, and vanilla JavaScript.
-        Deployed to GitHub Pages with no build step required.
+        A lightweight flashcard tool built to make self-testing less boring.
+        Users flip cards, mark what they got right, and watch their mastery
+        climb across a deck.
       </p>
       <div class="project-meta">
-        <div><strong>Role</strong>Designer &amp; developer</div>
-        <div><strong>Timeline</strong>One weekend</div>
-        <div><strong>Type</strong>Static personal site</div>
+        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Timeline</strong>Two weeks</div>
+        <div><strong>Type</strong>Study tool</div>
       </div>
     </section>
 
@@ -52,33 +52,30 @@
         <div>
           <h2>The idea</h2>
           <p>
-            A personal portfolio needs to do three things well: introduce the
-            person, surface their best work, and make it easy to get in touch.
-            I wanted mine to feel modern and fast, with zero build pipeline so
-            it's trivial to update and deploy.
+            I wanted a no-frills way to quiz myself on vocabulary without
+            getting distracted by the dozen features most flashcard apps bundle
+            in. A single deck, a flip, a verdict — that's it.
           </p>
 
-          <h2>How it's built</h2>
+          <h2>How it works</h2>
           <ul>
-            <li>Plain HTML, CSS, and JavaScript — no frameworks, no bundler.</li>
-            <li>Custom CSS with variables for theming (light &amp; dark) and a mobile-first responsive layout.</li>
-            <li>Interactive features: mobile nav, theme toggle persisted in <code>localStorage</code>, project filter, and client-side contact form validation.</li>
-            <li>Accessible navigation and ARIA labelling; honours <code>prefers-reduced-motion</code>.</li>
-            <li>Deployed via GitHub Pages straight from the <code>main</code> branch.</li>
+            <li>Cards are defined as a JSON array — front, back, and an optional hint.</li>
+            <li>Clicking a card triggers a CSS 3D flip so the answer is revealed.</li>
+            <li>"Got it" or "Review" buttons push the card to different queues.</li>
+            <li>Progress is stored in localStorage so you can pick up where you left off.</li>
           </ul>
 
-          <h2>What I wanted to show</h2>
+          <h2>What I learned</h2>
           <ul>
-            <li>That I can design a user-facing experience, not just work in tooling and tickets.</li>
-            <li>That I still enjoy coding hands-on — consultancy and development aren't mutually exclusive.</li>
-            <li>A coherent story: summary, experience timeline, project case studies, credentials, and contact.</li>
+            <li>How CSS <code>perspective</code> and <code>transform-style: preserve-3d</code> work.</li>
+            <li>Using data attributes to keep markup semantic but scriptable.</li>
+            <li>Writing small utility functions instead of one giant handler.</li>
           </ul>
 
           <h2>What's next</h2>
           <p>
-            A blog section for longer-form write-ups on product operations and
-            technical support, plus a downloadable résumé button on the about
-            section.
+            Adding deck import/export via JSON files, plus a light spaced
+            repetition algorithm so reviews get spaced more intelligently.
           </p>
         </div>
 
@@ -89,15 +86,15 @@
           </ul>
           <h3>Highlights</h3>
           <ul class="tech-list">
-            <li>Dark mode</li><li>Filterable projects</li><li>No build step</li>
+            <li>3D CSS</li><li>localStorage</li><li>Keyboard nav</li>
           </ul>
-          <a href="../contact.html" class="btn btn-primary" style="width:100%;text-align:center;">Get in touch</a>
+          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;">View source</a>
         </aside>
       </div>
 
       <div class="project-nav">
-        <a href="change-approval.html">← Change Approval Reduction</a>
-        <a href="rock-paper-scissors.html">Next: Rock, Paper, Scissors →</a>
+        <a href="rock-paper-scissors.html">← Rock, Paper, Scissors</a>
+        <a href="weather-dashboard.html">Next: Weather Dashboard →</a>
       </div>
     </section>
   </main>

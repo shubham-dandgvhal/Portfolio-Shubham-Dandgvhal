@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>This Portfolio Site — Shubham Dandgvhal</title>
+  <title>Weather Dashboard — Shubham Dandgvhal</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,18 +32,18 @@
       <p class="breadcrumb">
         <a href="../index.html">Home</a> /
         <a href="../index.html#projects">Projects</a> /
-        This Portfolio Site
+        Weather Dashboard
       </p>
-      <h1>This Portfolio Site</h1>
+      <h1>Weather Dashboard</h1>
       <p class="summary">
-        The site you're reading right now — a static, responsive, accessible
-        portfolio built from scratch with HTML, CSS, and vanilla JavaScript.
-        Deployed to GitHub Pages with no build step required.
+        A responsive weather app that lets users search any city and see the
+        current conditions, a five-day outlook, and sunrise/sunset times at a
+        glance. Built with React and a public weather API.
       </p>
       <div class="project-meta">
-        <div><strong>Role</strong>Designer &amp; developer</div>
-        <div><strong>Timeline</strong>One weekend</div>
-        <div><strong>Type</strong>Static personal site</div>
+        <div><strong>Role</strong>Solo developer</div>
+        <div><strong>Timeline</strong>Three weeks</div>
+        <div><strong>Type</strong>React single-page app</div>
       </div>
     </section>
 
@@ -52,52 +52,49 @@
         <div>
           <h2>The idea</h2>
           <p>
-            A personal portfolio needs to do three things well: introduce the
-            person, surface their best work, and make it easy to get in touch.
-            I wanted mine to feel modern and fast, with zero build pipeline so
-            it's trivial to update and deploy.
+            Most weather sites are either too busy or too sparse. I wanted a
+            middle-ground dashboard that surfaces the information I actually
+            care about in one scroll, without ads or filler.
           </p>
 
-          <h2>How it's built</h2>
+          <h2>How it works</h2>
           <ul>
-            <li>Plain HTML, CSS, and JavaScript — no frameworks, no bundler.</li>
-            <li>Custom CSS with variables for theming (light &amp; dark) and a mobile-first responsive layout.</li>
-            <li>Interactive features: mobile nav, theme toggle persisted in <code>localStorage</code>, project filter, and client-side contact form validation.</li>
-            <li>Accessible navigation and ARIA labelling; honours <code>prefers-reduced-motion</code>.</li>
-            <li>Deployed via GitHub Pages straight from the <code>main</code> branch.</li>
+            <li>Typing a city fetches current conditions and a forecast from the API.</li>
+            <li>Responses are cached in memory so switching tabs stays snappy.</li>
+            <li>Units can be toggled between Celsius and Fahrenheit and the choice persists.</li>
+            <li>Error states (bad city, network failure) show helpful messages instead of spinning forever.</li>
           </ul>
 
-          <h2>What I wanted to show</h2>
+          <h2>What I learned</h2>
           <ul>
-            <li>That I can design a user-facing experience, not just work in tooling and tickets.</li>
-            <li>That I still enjoy coding hands-on — consultancy and development aren't mutually exclusive.</li>
-            <li>A coherent story: summary, experience timeline, project case studies, credentials, and contact.</li>
+            <li>Working with React hooks for state and effects.</li>
+            <li>Structuring components around data flow instead of visuals.</li>
+            <li>Handling async errors gracefully — the happy path is the easy half.</li>
           </ul>
 
           <h2>What's next</h2>
           <p>
-            A blog section for longer-form write-ups on product operations and
-            technical support, plus a downloadable résumé button on the about
-            section.
+            Geolocation on first load, saved "favorite" cities, and a small
+            hourly chart for the next twelve hours.
           </p>
         </div>
 
         <aside class="project-sidebar">
           <h3>Tech stack</h3>
           <ul class="tech-list">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>React</li><li>CSS</li><li>REST API</li>
           </ul>
           <h3>Highlights</h3>
           <ul class="tech-list">
-            <li>Dark mode</li><li>Filterable projects</li><li>No build step</li>
+            <li>Hooks</li><li>Caching</li><li>Error states</li>
           </ul>
-          <a href="../contact.html" class="btn btn-primary" style="width:100%;text-align:center;">Get in touch</a>
+          <a href="#" class="btn btn-primary" style="width:100%;text-align:center;">View source</a>
         </aside>
       </div>
 
       <div class="project-nav">
-        <a href="change-approval.html">← Change Approval Reduction</a>
-        <a href="rock-paper-scissors.html">Next: Rock, Paper, Scissors →</a>
+        <a href="flashcards.html">← Flashcard Study App</a>
+        <a href="operations-dashboard.html">Next: Operations Dashboard →</a>
       </div>
     </section>
   </main>

@@ -1,0 +1,5 @@
+# Drop your profile photo here as profile.jpg
+#
+# The hero section of the home page loads images/profile.jpg.
+# If that file is missing, the hero gracefully falls back to a
+# gradient "SD" avatar.

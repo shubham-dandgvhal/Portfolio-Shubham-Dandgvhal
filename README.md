@@ -1,25 +1,27 @@
 # Portfolio — Shubham Dandgvhal
 
-A personal portfolio website built with HTML, CSS, and vanilla JavaScript.
-Designed to be clean, responsive, accessible, and easy to deploy to GitHub
-Pages.
+Personal portfolio for **Shubham Dandgvhal — Product Owner / Technical
+Product Owner** in regulated pharma and life-sciences SaaS. Built with
+HTML, CSS, and vanilla JavaScript. Clean, responsive, accessible, and
+deploys straight to GitHub Pages with no build step.
 
 ## Structure
 
 ```
 .
-├── index.html               # Home: hero, about, featured projects
-├── contact.html             # Contact info + demo contact form
+├── index.html                        # Home: hero, about, competencies,
+│                                     # experience, case studies, credentials
+├── contact.html                      # Contact info + demo contact form
 ├── projects/
-│   ├── rock-paper-scissors.html
-│   ├── flashcards.html
-│   └── weather-dashboard.html
+│   ├── operations-dashboard.html     # ServiceNow analytics product case study
+│   ├── change-approval.html          # Change-approval lead-time reduction
+│   └── reporting-automation.html     # Automated weekly client reporting
 ├── css/
-│   └── styles.css           # All site styling
+│   └── styles.css                    # All site styling
 ├── js/
-│   └── script.js            # Interactivity
+│   └── script.js                     # Interactivity
 └── images/
-    └── profile.jpg          # Hero profile photo (add yours here)
+    └── profile.jpg                   # Hero profile photo
 ```
 
 ## Features
@@ -27,10 +29,9 @@ Pages.
 - **Responsive layout** — mobile-first, adapts from phone to desktop.
 - **Dark / light theme toggle** — remembered across visits via `localStorage`.
 - **Mobile navigation** — animated hamburger menu for small screens.
-- **Project filter** — filter the project grid by technology.
 - **Contact form** — client-side validation with a friendly status message.
-- **Project detail pages** — one page per project with stack, highlights, and
-  reflection on what I learned.
+- **Case study pages** — one page per project with stack, highlights, and
+  reflection on impact and learning.
 - **Accessible** — semantic HTML, ARIA labels on interactive controls, and a
   `prefers-reduced-motion` fallback.
 

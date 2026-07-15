@@ -202,7 +202,19 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(1.4rem, 3vw, 2rem);
   color: var(--muted);
   font-weight: 600;
+  margin-bottom: 6px;
+}
+.role-line {
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
   margin-bottom: 20px;
+}
+.timeline-context {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: -4px 0 10px;
 }
 .lead {
   font-size: 1.05rem;

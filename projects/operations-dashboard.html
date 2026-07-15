@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real-Time Operations Dashboard — Shubham Dandgvhal</title>
+  <title>ServiceNow Analytics Product — Shubham Dandgvhal</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +19,10 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="../index.html">Home</a>
         <a href="../index.html#about">About</a>
+        <a href="../index.html#competencies">Competencies</a>
         <a href="../index.html#experience">Experience</a>
-        <a href="../index.html#projects" class="active">Projects</a>
-        <a href="../index.html#certifications">Certifications</a>
+        <a href="../index.html#projects" class="active">Case studies</a>
+        <a href="../index.html#credentials">Credentials</a>
         <a href="../contact.html">Contact</a>
       </nav>
     </div>
@@ -31,20 +32,20 @@
     <section class="project-hero container">
       <p class="breadcrumb">
         <a href="../index.html">Home</a> /
-        <a href="../index.html#projects">Projects</a> /
-        Real-Time Operations Dashboard
+        <a href="../index.html#projects">Case studies</a> /
+        ServiceNow Analytics Product
       </p>
-      <h1>Real-Time Operations Dashboard</h1>
+      <h1>ServiceNow Analytics Product</h1>
       <p class="summary">
-        A single-pane-of-glass dashboard built at IQVIA that centralizes
-        Incident, Request, and Change ticket status alongside live queue
-        counts — giving management instant insight into team load and
-        delivery health.
+        A full-stack analytics product I built and shipped end to end at IQVIA
+        — centralizing Incident, Request, and Change ticket status and queue
+        metrics into a single leadership view so decisions happen with live
+        data instead of Monday-morning spreadsheets.
       </p>
       <div class="project-meta">
-        <div><strong>Role</strong>Lead developer &amp; product advisor</div>
-        <div><strong>Organization</strong>IQVIA R&amp;DS India</div>
-        <div><strong>Type</strong>Internal operational tool</div>
+        <div><strong>Role</strong>End-to-end owner &amp; developer</div>
+        <div><strong>Organization</strong>IQVIA R&amp;DS</div>
+        <div><strong>Type</strong>Full-stack analytics product</div>
       </div>
     </section>
 
@@ -53,52 +54,54 @@
         <div>
           <h2>The problem</h2>
           <p>
-            Before the dashboard existed, leadership had to piece together
-            operational status from ServiceNow reports, spreadsheets, and ad-hoc
-            pings in chat. By the time the picture was complete, it was already
-            out of date — and high-severity tickets could sit in the wrong
-            queue without anyone noticing.
+            Managers had to piece together operational status from ServiceNow
+            reports, spreadsheets, and ad-hoc chat threads. By the time the
+            picture was complete, it was already out of date — and ageing
+            tickets in the wrong queue could go unnoticed until they became
+            incidents in their own right.
           </p>
 
-          <h2>The approach</h2>
+          <h2>The build</h2>
           <ul>
-            <li>Interviewed managers and team leads to agree on the five to six metrics that actually drove daily decisions.</li>
-            <li>Designed a layout that made queue counts, ageing tickets, and change status scannable at a glance.</li>
-            <li>Built the UI with HTML, CSS, and JavaScript, pulling live data from ServiceNow via its REST APIs.</li>
-            <li>Added colour-coded SLA indicators and a "what changed since last refresh" strip so the view feels alive.</li>
+            <li>Modelled the data in Snowflake, pulling ticket state from ServiceNow so historical trends and current queue depths lived in one place.</li>
+            <li>Wrote a FastAPI backend that served aggregated metrics on demand and handled auth against the internal identity provider.</li>
+            <li>Built the analytics UI in Python/Dash with Plotly visualisations and Pandas transformations — filters for team, priority, and age drop straight into the same query layer.</li>
+            <li>Packaged and shipped the app as a Docker container so it could be deployed and updated repeatably.</li>
+            <li>Used MS Copilot during development to accelerate boilerplate and stay focused on the product decisions that mattered.</li>
           </ul>
 
           <h2>Impact</h2>
           <ul>
-            <li>Accelerated management decision-making with instant operational visibility.</li>
-            <li>Eliminated manual status round-ups that previously consumed multiple hours each week across team leads.</li>
-            <li>Improved oversight of Incident, Request, and Change queues in a highly regulated CRO/healthcare environment.</li>
+            <li>Gave leadership real-time visibility into Incident, Request, and Change queues — no more waiting on manual round-ups.</li>
+            <li>Accelerated management decision-making with a single trusted source of operational metrics.</li>
+            <li>Reduced the ambient reporting overhead that used to consume team-lead time each week.</li>
           </ul>
 
           <h2>What I learned</h2>
           <ul>
-            <li>The dashboard that helps leadership is the one that answers their next question, not the one with the most widgets.</li>
-            <li>Trust in a live view is earned through little details — timestamps, refresh status, and clear empty states.</li>
-            <li>Partnering early with stakeholders beats shipping a technically clever tool nobody uses.</li>
+            <li>Owning something end to end forces you to think in product terms even for internal tools — the "so what?" question sharpens every widget.</li>
+            <li>Shipping to production changes what you value: observability, error handling, and rollback matter more than a clever chart.</li>
+            <li>The right stack for a small analytics product isn't the fanciest one — it's the one you can build, ship, and support alone.</li>
           </ul>
         </div>
 
         <aside class="project-sidebar">
           <h3>Tech stack</h3>
           <ul class="tech-list">
-            <li>ServiceNow</li><li>SQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>Python</li><li>Dash</li><li>FastAPI</li>
+            <li>Snowflake</li><li>Plotly</li><li>Pandas</li><li>Docker</li>
           </ul>
           <h3>Highlights</h3>
           <ul class="tech-list">
-            <li>Live KPIs</li><li>SLA alerts</li><li>Stakeholder-led design</li>
+            <li>End-to-end delivery</li><li>Live KPIs</li><li>Regulated context</li>
           </ul>
           <a href="../contact.html" class="btn btn-primary" style="width:100%;text-align:center;">Discuss this work</a>
         </aside>
       </div>
 
       <div class="project-nav">
-        <a href="weather-dashboard.html">← Weather Dashboard</a>
-        <a href="reporting-automation.html">Next: Reporting Automation →</a>
+        <a href="../index.html#projects">← All case studies</a>
+        <a href="change-approval.html">Next: Change-Approval Reduction →</a>
       </div>
     </section>
   </main>
@@ -108,7 +111,7 @@
       <p>&copy; <span id="year"></span> Shubham Dandgvhal. Built with care.</p>
       <ul class="footer-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#projects">Case studies</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
     </div>
